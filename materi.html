@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Responsive Navbar</title>
+   
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">Websiteku</div>
+            <button class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="materi.html">Materi</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Website Saya</title>
+        
+    </head>
+    <body>
+        <div class="header">
+            Asi Eksklusif
+        </div>
+    
+        <div class="content-container">
+            <div class="content-section">
+                <div class="content-box">
+                    <h2>Apasih Asi Eksklusif</h2>
+                    <p>ASI eksklusif didefinisikan sebagai pemberian ASI tanpa suplementasi makanan maupun minuman lain kecuali obat. Setelah 6 bulan ASI tetap dapat mencukupi kebutuhan mineral seperti zat besi, sehingga untuk memenuhi kebutuhan tersebut harus diberikan MP ASI (makanan pendamping ASI ) yang kaya zat besi</p>
+                </div>
+    
+                <div class="content-box">
+                    <h2>Tata Cara Menyusui</h2>
+                    <p>Posisi Menyusui: Pilih posisi yang nyaman untuk ibu dan bayi. Posisi yang umum digunakan adalah Duduk dengan menopang ibu jelas dan nyaman, serta gunakan bantal untuk menopang bayi agar tidak perlu membungkuk. Bersihring ibu dan bayi juga sebaiknya miring sarna-sama kesamping. Posisi menyusui sambil berbaring bisa dilakukan saat malam atau saat ibu ingin beristirahat. Perlekatan atau latch yang benar perlekatan atau latch yang benar sangat penting agar bayi mendapatkan ASI secara optimal dan ibu tidak mengalami nyeri puting. Perlekatan mencakup seluruh bagian puting dan sebagian areola. Bayi bayi menyusuui payudara dan bibirnya membentuk segel di sekitar puting untuk ASI. Menyusui sebaiknya dilakukan setiap 2-3 jam bayi tumbuh. Ini membantu menjaga pasokan ASI dan memastikan bayi mendapat ASI yang cukup. Dukungan dari konselor laktasi juga bisa membantu memaksimalkan keberhasilan menyusui.</p>
+                </div>
+            </div>
+    
+            <div class="content-section">
+                <div class="content-box">
+                    <h2>Manfaat ASI Eksklusif</h2>
+                    <ul class="content-list">
+                        <li>Mencegah Alergi</li>
+                        <li>Meningkatkan Kecerdasan</li>
+                        <li>Melindungi Dari Obesitas</li>
+                        <li>Mengatasi Trauma Pasca Melahirkan</li>
+                    </ul>
+                </div>
+    
+                <div class="image-container">
+                    <img src="th.jpeg" alt="ASI Eksklusif Illustration">
+                </div>
+    
+                <div class="content-box">
+                    <h2>Tips Menyusui yang Baik</h2>
+                    <ul class="content-list">
+                        <li>Puting Lecet: Pastikan perlekatan bayi benar dan gunakan salep khusus untuk ASI untuk mengatasi</li>
+                        <li>Pembengkakan Payudara: Menyusui lebih sering atau memompa ASI dapat membantu mengurangi pembengkakan</li>
+                        <li>Produksi ASI Rendah: Resehatlah menyusui secara rutin, konsumsi makanan bergizi, dan istirahat cukup. Dukungan dari konselor laktasi juga bisa membantu</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
+        <div class="footer">
+            @Don't Copyright
+        </div>
+        
+        <script>
+            const hamburger = document.querySelector('.hamburger');
+            const navLinks = document.querySelector('.nav-links');
+    
+            hamburger.addEventListener('click', () => {
+                hamburger.classList.toggle('active');
+                navLinks.classList.toggle('active');
+            });
+    
+            // Close menu when clicking on a link
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                link.addEventListener('click', () => {
+                    hamburger.classList.remove('active');
+                    navLinks.classList.remove('active');
+                });
+            });
+        </script>
+    </body>
+</html>

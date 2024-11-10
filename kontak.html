@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Responsive Navbar</title>
+   
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">Websiteku</div>
+            <button class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="materi.html">Materi</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Website Saya</title>
+        
+    </head>
+    <body>
+        <div class="container">
+            <div class="contact-header">
+                <h1>Contact Us</h1>
+                <h2>Hubungi Kami Disini</h2>
+            </div>
+    
+            <div class="contact-section">
+                <h3>Whatsapp</h3>
+                <div class="contact-info">082154319064</div>
+                <a href="https://wa.me/6282154319064" class="contact-button" target="_blank">🔗 Click here</a>
+            </div>
+    
+            <div class="contact-section">
+                <h3>Instagram</h3>
+                <div class="contact-info">m_randa1006</div>
+                <a href="https://www.instagram.com/mi_randa1006?igsh=MW8wZHhobW91NWEyaw==" class="contact-button" target="_blank">📷 Instagram</a>
+            </div>
+    
+            <div class="contact-section">
+                <h3>Facebook</h3>
+                <div class="contact-info">Mira Miranda</div>
+                <a href="https://www.facebook.com/share/DEbxB4YTienombvL/" class="contact-button" target="_blank">👤 Facebook</a>
+            </div>
+    
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.6761135887644!2d117.15419831475403!3d-0.4974893996370742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2df678b76c3ad6ef%3A0x33f1f7bc0e168003!2sJl.%20Srikaya%207%2C%20Samarinda%20Utara%2C%20Kota%20Samarinda%2C%20Kalimantan%20Timur%2075243!5e0!3m2!1sid!2sid!4v1660472095811!5m2!1sid!2sid"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+    
+            <div class="location-info">
+                <p><strong>Alamat:</strong> Gg. Srikaya 7</p>
+                <p>Samarinda, Kalimantan Timur 75243</p>
+            </div>
+        </div>
+    
+        <div class="footer">
+            @Don't Copyright
+        </div>
+
+        <script>
+            const hamburger = document.querySelector('.hamburger');
+            const navLinks = document.querySelector('.nav-links');
+    
+            hamburger.addEventListener('click', () => {
+                hamburger.classList.toggle('active');
+                navLinks.classList.toggle('active');
+            });
+    
+            // Close menu when clicking on a link
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                link.addEventListener('click', () => {
+                    hamburger.classList.remove('active');
+                    navLinks.classList.remove('active');
+                });
+            });
+        </script>
+    </body>
+</html>

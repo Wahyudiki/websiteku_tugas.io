@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Responsive Navbar</title>
+   
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">Websiteku</div>
+            <button class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="materi.html">Materi</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="header">
+        Selamat Datang Di Website Saya
+    </div>
+
+    <div class="video-container">
+        <video controls>
+            <source src="vidio.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div class="biodata">
+        <h2>Biodata Website</h2>
+        <div class="biodata-item">
+            <strong>Nama Website:</strong> Website ini bernama My blog
+        </div>
+        <div class="biodata-item">
+            <strong>Tanggal Dibuat:</strong> 09 November 2024
+        </div>
+        <div class="biodata-item">
+            <strong>Kategori:</strong> Tugas
+        </div>
+        <div class="biodata-item">
+            <strong>Platform:</strong> WordPress
+        </div>
+        <div class="biodata-item" style="margin-top: 1rem;">
+            Website ini berisikan tentang materi-materi tentang kesehatan yang dimana dapat bermanfaat bagi media masa agar dapat memempermudah dalam mencari informasi terkait kesehatan dengan adanya website ini
+        </div>
+    </div>
+
+    <div class="fitur">
+        <h2>Fitur</h2>
+        <div class="fitur-container">
+            <div class="fitur-item">
+                <h3>Home</h3>
+                <p>Di menu ini berisikan tentang biodata website</p>
+            </div>
+            <div class="fitur-item">
+                <h3>Materi</h3>
+                <p>Di menu ini berisikan tentang materi website</p>
+            </div>
+            <div class="fitur-item">
+                <h3>Kontak</h3>
+                <p>Di menu ini berisikan tentang kontak persona</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+
+        // Close menu when clicking on a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navLinks.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
